@@ -371,7 +371,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   .ft-bottom{background: #3c3e93; margin:0; padding:25px 0 15px; position:relative; z-index:2;}  
   .ft-bottom p{margin:0 0 10px;}
   .ft-bottom .copyright{}
-  
+  .ft-bottom p.copyright { text-align: center;}
 .banner-inner{background-image:url(images/slider-01.png); background-repeat: no-repeat; background-attachment: scroll; background-position: center center; background-size:cover; height: 450px; position: relative; text-align:center; z-index: 2;}
 .banner-inner:before{/*background:#017bbc; content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 100%; opacity: 0.5;*/}
 .banner-inner .textblock{height: 450px; position: relative;}
@@ -432,6 +432,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
    
    .header{border-top:10px solid #3c3e93;}
    .top-sec{display:none;}
+   .head-top .logo span {font-size: 14px;}
+   .head-top .logo small { color: #000; font-size: 10px; }
+   .head-top .head-right { display: none;}
    .Free-Consulting{display:none;}
    .menu-head{margin:0; font-size:14px;}
    .menu-head::after{display:none;}
@@ -455,14 +458,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
    .menu-head .sub-menu > li > a:focus, .menu-head .sub-menu > li > a:hover{background: #fe0000 !important; padding:5px 15px 5px 30px;}
    .menu-head .sub-menu{position: relative !important; top: 0 !important; margin: 0 !important; left: 0 !important; display: block !important; height: auto !important; width: auto; opacity: 1; visibility: inherit; -webkit-transform: inherit; -moz-transform: inherit; -ms-transform: inherit; -o-transform: inherit; transform: inherit; background: none; padding:0; border:0;}
    .menu-head .sub-menu > li > a{background:none !important; padding:5px 15px 5px 30px; width: auto; color:#fff !important;}
-   
-   .banner{padding: 84px 0 0;}
+   .banner {padding: 172px 0 0;}
    .banner .item img{/*height: 550px; -o-object-fit: cover; object-fit: cover; width: 100%;*/}  
    .banner .slide-text{padding: 20px 20px 5px; left: 0; margin: ; bottom: 0; position: relative; margin: -70px 15px 0; background: #0c0e63; color: #fff;}
    .banner .slide-text > h1{font-size: 24px; line-height:30px; color: #fff;}
    .slide-text > h1 span{font-size: 18px;}
    .banner .slide-text p{font-size: 14px; line-height:24px;}
-   .slide-text .btn{background: #2c2e83;}
+   .slide-text .btn{background: #2c2e83; font-size: 14px;}
    .about-sec h2{font-size: 26px;}
    .about-sec .about-right{padding: 0 15px;}
    .about-sec .about-right figure{display: none;}
@@ -476,8 +478,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
    .service-sec .info-box img{width:100%;}
    .counter-sec .row-bg{margin: 0 15px; padding: 50px 5px 30px;}
    .counter-sec h2{font-size: 26px;}
-   .principal-sec .left-grid figure{width:45%;}
+   .principal-sec .left-grid figure{width:100%;}
    .principal-sec .left-grid h4{font-size: 20px;}
+   .counter-sec .counter-padd { flex-wrap: wrap; }
+   .counter-sec h4 { font-size: 14px; margin: 5px 0 5px; }
    .counter-sec .icon-one{width: 90px; height: 90px;}
    .counter-sec .icon-two{width: 99px; height: 119px;}
    .counter-sec .icon-three{width: 120px; height: 120px;}
@@ -489,26 +493,51 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
    .client-speak .owl-theme .owl-controls .owl-buttons div{left:0;}
    .client-speak .owl-theme .owl-controls .owl-buttons div.owl-next{right:0;}
    .ft-bottom div, .ft-bottom p{text-align:center;}
-       
+   .ft-logo img {max-width: 50%;}
+
 }
-
-
 /* Smartphones to Tablets */
 @media (min-width: 481px) and (max-width: 767px) {
-   
+
    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{-ms-flex: 0 0 100% !important; flex: 0 0 100% !important; max-width: 100% !important;}
    
 }
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 959px) {
-         
+        
+   .banner {padding: 0px;}		
    .header{position: relative;}
    .container{width: auto; max-width:850px; padding:0 30px;}
    .top-sec .logo{width:100%; text-align:center; padding: 0 0 20px}
    .top-sec .head-right{width:100%; text-align:center; float:none !important}
+   
    .menu-head{font-size: 14px;}
-   .phn-detail ul{margin: 20px 0 0;}   
+   .head-left{ -ms-flex: 0 0 75%; flex: 0 0 75%; max-width: 75%; }
+   .top-sec ul li {margin: 0px 2px 40px 0px;}
+   .head-top .logo span { font-size: 13px !important; }
+   .head-top .logo small {font-size: 12px !important; }
+   .phn-detail ul li span {font-size: 20px !important;}
+   .phn-detail ul li small { font-size: 15px !important;}
+   .phn-detail ul li i {top: 0px; font-size: 30px; }
+   .phn-detail ul{margin: 20px 0 5px;}   
+   .banner { position: relative; padding: 0px 0 0; }
+   .slide-text {max-width: 650px;  margin: 0 0 0 -607px; left: 79%; bottom: 16%; padding: 15px 40px 15px;}
+   .slide-text .btn { font-size: 14px;}
+   .Free-Consulting { right: 0px; top: 50px; }
+   .about-sec .about-left { margin: 0 0 30px;padding: 0 25px 0 15px; order: 2;}
+   .about-left {flex: 0 0 100%; max-width: 100%;}
+   .about-right {flex: 0 0 100%; max-width: 100%;}
+   .tag-sec .info-content h3 { font-size: 24px;}
+   .tag-sec .info-content h4 { font-size: 13px;}
+   .counter-Txt { max-width: 50%;}
+   .counter-sec .counter-padd { flex-wrap: wrap; }
+   .ss-coll { max-width: 50%; flex: 0 0 50%; }
+   .client-speak .owl-theme .owl-controls .owl-buttons div { left: 0px; }
+   .client-speak .owl-theme .owl-controls .owl-buttons div.owl-next { right: 0px;}
+   .counter-sec h4 { margin: 5px 0 5px; }
+   .ft-logo img {max-width: 20%;}
+   
    .menu-head .navbar-nav > li{padding: 0 6px; letter-spacing: -0.5px;}
    .apply-btn{margin: 0 0 0 202px;}
    .apply-btn .btn{padding: 9px 25px 8px;}
@@ -519,8 +548,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
    .why-choose-right{margin: 0 0 40px; overflow:hidden; float: none; width: 100%;}
    .counter-sec .counter-count{display: block; text-align: center; margin:0 0 20px;}
    .counter-sec img{display:block; margin: 0 auto 15px; top: 0;}
-   .footer .col-sm-3{width: 50%; min-height: 230px;}   
-   
+   .footer .col-sm-3 { max-width: 50%; min-height: 230px; flex: 0 0 50%;}
 }
 
 /* Desktop */
